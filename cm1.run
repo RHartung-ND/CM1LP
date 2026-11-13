@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#$ -M drichte2@nd.edu
+#$ -m n
+#$ -pe mpi-64 128 
+#$ -q *@@richter
+#$ -N pi_verify
+#$ -j y
+
+
+homedir=~/CM1LP-codex/run/
+rundir=/groups/drichte2/drichte2/CM1LP-codex/pi_verify/test
+
+cd $rundir
+
+module load intelmpi
+module load intel
+module load netcdf/4.9.2/intel/24.2
+
+cp $homedir/cm1.exe $rundir
+
+mpirun -n 128 $rundir/cm1.exe > $rundir/cm1out.log 
+
+
