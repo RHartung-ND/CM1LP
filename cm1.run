@@ -8,8 +8,10 @@
 #$ -j y
 
 
-homedir=~/CM1LP-codex/run/
-rundir=/groups/drichte2/drichte2/CM1LP-codex/pi_verify/test
+homedir=/groups/dthain/users/_/projects/CM1LP
+rundir=/groups/dthain/users/_/projects/CM1LP/test
+
+/groups/drichte2/drichte2/CM1LP-codex/pi_verify/test
 
 cd $rundir
 
