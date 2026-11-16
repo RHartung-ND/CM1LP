@@ -11,8 +11,6 @@
 homedir=/groups/dthain/users/_/projects/CM1LP
 rundir=/groups/dthain/users/_/projects/CM1LP/test
 
-/groups/drichte2/drichte2/CM1LP-codex/pi_verify/test
-
 cd $rundir
 
 module load intelmpi
