@@ -1,10 +1,10 @@
 #!/bin/bash
 
-#$ -M drichte2@nd.edu
+#$ -M _@nd.edu
 #$ -m n
 #$ -pe mpi-64 128 
-#$ -q *@@richter
-#$ -N pi_verify
+#$ -q long@@general_access
+#$ -N cm1lp_test
 #$ -j y
 
 
